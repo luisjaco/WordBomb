@@ -1,5 +1,5 @@
 # WordBomb
-**WordBomb** is a fast-paced party game for you and your friends! It was made using JavaScript, HTML, and CSS. The rules of **WordBomb** are as follows:
+**WordBomb** is a fast-paced party game for you and your friends! It was made using JavaScript, HTML, and CSS. You can play **WordBomb** [here](https://luisjaco.github.io/WordBomb/)! The rules of the game are as follows:
 
 1. First, a category is chosen at random. The starting player will hold the remote.
 2. Each round, active players will take turns saying one word relevant to the category.
