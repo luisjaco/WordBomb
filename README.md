@@ -13,7 +13,8 @@
 7. The game ends when only one player is left.
 
 > [!NOTE]
-> **WordBomb** requires an external bluetooth remote (Nintendo JoyCon, Nintendo Wii Remote, Xbox Controller, etc.).
+> An external bluetooth remote is required to play (Nintendo JoyCon, Nintendo Wii Remote, Xbox Controller, etc.).
+> **WordBomb** is 2-5 players.
 
 ### License
 [MIT](https://choosealicense.com/licenses/mit/)
