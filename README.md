@@ -1,3 +1,6 @@
+<img src="./resources/word_bomb.png"
+     alt="WordBomb logo"
+     style="width: 10rem;" />
 # WordBomb
 **WordBomb** is a fast-paced party game for you and your friends! It was made using JavaScript, HTML, and CSS. You can play **WordBomb** [here](https://luisjaco.github.io/WordBomb/)! The rules of the game are as follows:
 
