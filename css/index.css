@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: white;
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+}
+
+header {
+    padding-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 15%;
+    width: auto;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-bomb {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-bomb #logo {
+    height: 100%;
+    width: auto;
+}
+
+.word-bomb h1 {
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+
+main {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    box-sizing: border-box;
+
+    margin: 1rem auto;
+    
+    border: 3px solid black;
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+.rules-list {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.rules-list ol li {
+    list-style-position: inside;
+    margin: .5rem 0px;
+}
+
+.rules-list ul {
+    margin-top: .5rem;
+    list-style-type: "*";
+    font-size: .8rem;
+}
+
+footer {
+    height: 15%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    width: 15%;
+}
+
+button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5rem 1.5rem;
+    
+    font-size: 1.8rem;
+
+    transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: .8rem;
+    letter-spacing: .2rem;
+}
+
+button:hover {
+    cursor: pointer;
+
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+button:active {
+    background-color: hsl(0, 0%, 30%);
+    border-color: hsl(0, 0%, 30%);
+}
+
+button:disabled{
+    visibility: hidden;
+}
+
+/* not relevant to index, but will be used in other places */
+
+input {
+    box-sizing: border-box;
+    border: none;
+    transition: background-color .3s;
+    background-color: white;
+    border-bottom: 3px solid black;
+}
+
+input:focus {
+    box-sizing: border-box;
+
+    transition: background-color .3s;
+    background-color: hsl(0, 0%, 80%);
+}

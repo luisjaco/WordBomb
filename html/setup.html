@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Word Bomb</title>
+        <link rel="icon" href="../resources/word_bomb.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="../css/index.css" type="text/css">
+        <link rel="stylesheet" href="../css/setup.css" type="text/css">
+        <script src="../js/setup.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="word-bomb">
+                <img id="logo" src="../resources/word_bomb.png">
+                <h1>Word Bomb</h1>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <h2>Setup:</h2>
+                <div class="grid">
+                    <h3 class="buttons-header">Buttons:</h3>
+                    <div class="buttons-flex">
+                        <div class="buttons-description">
+                            <p>Press a button on your controller to set the <b>NEXT</b> and <b>GO AGAIN</b> buttons.</p>
+                        </div>
+                        <div class="button-input">
+                            <p>NEXT</p>
+                            <input id="nextInput" placeholder="NEXT" maxlength="13">
+                        </div>
+                        <div class="button-input">
+                            <p>GO AGAIN</p>
+                            <input id="goAgainInput" placeholder="GO AGAIN" maxlength="13">
+                        </div>
+                    </div>
+                    <h3 class="players-header">Players:</h3>
+                    <div class="players-flex">
+                        <div class="player-input">
+                            <p>PLAYER 1</p>
+                            <input id="player1Input" placeholder="NAME" maxlength="20">
+                        </div>
+                        <div class="player-input">
+                            <p>PLAYER 2</p>
+                            <input id="player2Input" placeholder="NAME" maxlength="20">
+                        </div>
+                        <div class="player-input hidden">
+                            <p>PLAYER 3</p>
+                            <input id="player3Input" placeholder="NAME" maxlength="20">
+                        </div>
+                        <div class="player-input hidden">
+                            <p>PLAYER 4</p>
+                            <input id="player4Input" placeholder="NAME" maxlength="20">
+                        </div>
+                        <div class="player-input hidden">
+                            <p>PLAYER 5</p>
+                            <input id="player5Input" placeholder="NAME" maxlength="20">
+                        </div>
+                        <div class="add-remove-buttons">
+                            <div class="button">
+                                <button id="removePlayerButton" disabled>Remove</button>
+                            </div>
+                            <div class="button">
+                                <button id="addPlayerButton">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="button">
+                <a href="../index.html">
+                    <button>Back</button>
+                </a>
+            </div>
+            <div class="button">
+                <a href="./pre-game.html">
+                    <button id="nextButton">Next</button>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Word Bomb</title>
+        <link rel="icon" href="../resources/word_bomb.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="../css/index.css" type="text/css">
+        <link rel="stylesheet" href="../css/pre-game.css" type="text/css">
+        <script src="../js/pre-game.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="word-bomb">
+                <img id="logo" src="../resources/word_bomb.png">
+                <h1>Word Bomb</h1>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <h2>Setup:</h2>
+                <div class="grid">
+                    <div class="input-test">
+                        <div class="input-test-header">
+                            <h3>Input Test:</h3>
+                        </div>
+                        <div class="input-test-box">
+                            <h3 id="input-test-text"></h3>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-header">
+                            <h3>Current Category:</h3>
+                        </div>
+                        <div class="category-container">
+                            <p id="categoryText"></p>
+                        </div>
+                        <div class="spin">
+                            <button id="spinButton">Spin!</button>
+                        </div>
+                    </div>
+                    <div class="turn-order">
+                        <p>
+                            <b>Players will take turns in the following order:</b>
+                            <br>
+                            <div id="playerOrder"></div>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="button">
+                <a href="./setup.html">
+                    <button>Back</button>
+                </a>
+            </div>
+            <div class="button">
+                <a href="./game.html">
+                    <button id="startButton">Start</button>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

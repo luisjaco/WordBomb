@@ -1,0 +1,171 @@
+* {
+    /* border: 1px solid red; */
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Analog";
+    src: url("../resources/digital-7.ttf") format("truetype");
+}
+
+@keyframes rainbowBackground {
+    0% { background-color: hsl(0, 50%, 60%); }   /* Red */
+    10% { background-color: hsl(30, 50%, 60%); }  /* Orange */
+    20% { background-color: hsl(60, 50%, 60%); }  /* Yellow */
+    30% { background-color: hsl(120, 50%, 60%); }  /* Green */
+    40% { background-color: hsl(240, 60%, 60%); }  /* Blue */
+    50% { background-color: hsl(275, 50%, 40%); }  /* Indigo */
+    60% { background-color: hsl(273, 50%, 60%); }  /* Violet */
+    70% { background-color: hsl(328, 50%, 54%); }  /* Deep Pink */
+    80% { background-color: hsl(16, 50%, 60%); }  /* Orange Red */
+    90% { background-color: hsl(146, 50%, 36%); }  /* Sea Green */
+    100% { background-color: hsl(0, 50%, 60%); } /* Red (restarts the cycle) */
+}
+
+main {
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+body {
+    background-color: white;
+    animation: rainbowBackground 10s ease-in-out infinite;
+}
+
+.circle-container {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    width: 24rem;
+    height: 24rem; 
+    /* To view radius: */
+    /* border: 2px solid black;  */ 
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.footer {
+    width: 40%;
+    height: 80%;
+    border: 3px solid black;
+    border-radius: 1rem;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player {
+    position: absolute;
+    transform: translate(-50%, -50%); /* Centers the items at their position */
+    
+    font-weight: bold;
+    width: 40%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid black;
+    border-radius: 1rem;
+    background-color: white;
+
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.logo-middle {
+    position: fixed;
+    height: 10rem;
+    width: 10rem;
+    top: 43%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+.logo-middle img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bomb-container p {
+    font-size: 5rem;
+    width: 40%;
+    position: absolute;
+    top: 6rem;
+    left: 20%;
+    color: white;
+    font-family: "Analog", sans-serif;
+    text-align: center;
+}
+
+#blank {
+    animation: thump .6s ease-in-out infinite;
+}
+
+#blank-red {
+    animation: thump .3s ease-in-out infinite;
+}
+
+#explode {
+    animation: rumble .2s ease-in-out infinite;
+}
+
+#explode,
+#blank,
+#blank-red {
+    visibility: hidden;
+}
+
+/* Define the keyframes for the thumping effect */
+@keyframes thump {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes rumble {
+    0% {
+      transform: translateX(0) rotate(0);
+    }
+    25% {
+      transform: translateX(-.5rem) rotate(-10deg);
+    }
+    50% {
+      transform: translateX(.5rem) rotate(10deg);
+    }
+    75% {
+      transform: translateX(-.5rem) rotate(-10deg);
+    }
+    100% {
+      transform: translateX(.5rem) rotate(10deg);
+    }
+}
+
+.player-turn {
+    background-color: hsl(0, 0%, 80%);
+    box-shadow: 0 0rem 3rem white; /* Green glow */
+}
+
+.player-turn-ending {
+    background-color: lightcoral;
+    box-shadow: 0 0 3em red; /* Green glow */
+}
+
+.player-lost {
+    background-color: hsla(0, 40%, 50%, 0.5);
+    border: 3px solid hsla(0, 40%, 40%, 0.5);
+    color: hsla(0, 40%, 40%, 0.5);
+}
+
+.player-won {
+    background-color: hsl(56, 87%, 75%);
+    border: 3px solid hsl(56, 87%, 50%);
+}

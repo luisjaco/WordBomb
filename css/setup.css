@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+.container {
+    height: 80%;
+}
+
+input {
+    box-sizing: border-box;
+    width: 5rem;
+    font-size: 1rem;
+    padding: .3rem;
+    border: none;
+    transition: background-color .3s;
+    background-color: white;
+    border-bottom: 3px solid black;
+}
+
+input:focus {
+    box-sizing: border-box;
+
+    transition: background-color .3s;
+    background-color: hsl(0, 0%, 80%);
+}
+
+.grid {
+    margin-top: .5rem;
+    width: 100%;
+    height: 90%;
+
+    display: grid;
+    grid-template-areas:    "buttons-header players-header players-header"
+                            "buttons players players";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 9fr;
+}
+
+.buttons-header {
+    grid-area: buttons-header;
+    text-align: center;
+    border-right: 1.5px solid black; /* will match up to players-flex left border to make 3px. */
+
+}
+
+.buttons-flex {
+    grid-area: buttons;
+    height: 100%;
+    width: 100%;
+    border-right: 1.5px solid black; /* will match up to players-flex left border to make 3px. */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons-description {
+    padding:
+     0px 1rem;
+}
+.button-input {
+    width: 80%;
+    height: 15%;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.button-input input {
+    width: 7rem;
+}
+
+.players-header {
+    grid-area: players-header;
+    text-align: center;
+    border-left: 1.5px solid black;
+
+}
+
+.players-flex {
+    grid-area: players;
+    height: 100%;
+    width: 100%;
+
+    border-left: 1.5px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-input {
+    width: 80%;
+
+    margin-bottom: 2%;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.player-input input {
+    width: 10rem;
+}
+
+.add-remove-buttons {
+    margin-top: 2%;
+    height: 13%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-remove-buttons button {
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    height: 100%;
+    padding: 0px;
+}
+
+.add-remove-buttons .button {
+    width: 35%;
+    height: 100%;
+}
+
+.hidden {
+    /* players 3-5 will be hidden on intialization. */
+    visibility: hidden;
+}
